@@ -1,0 +1,3342 @@
+version = 0
+sysroot = ""
+sysroots_dir = ""
+parts = [ "Python:ssl", "Python:sysconfig", "Python:zlib", "Python:importlib.resources", "PyQt:PyQt5.QtWidgets", "PyQt:PyQt5.QtNetwork", "PyQt:PyQt5.QtAndroidExtras", "PyQt:PyQt5.QtX11Extras", "PyQt:PyQt5.QtWinExtras", "PyQt:PyQt5.QtMacExtras", "PyQt:PyQt5.uic",]
+
+[Application]
+entry_point = ""
+is_console = false
+is_bundle = false
+name = ""
+qmake_configuration = ""
+script = "pineboo.py"
+syspath = ""
+
+[Application.Package]
+name = "/usr/local/lib/python3.8/dist-packages/pineboolib"
+exclude = [ "*.pyc", "*.pyd", "*.pyo", "*.pyx", "*.pxi", "__pycache__", "*-info", "EGG_INFO", "*.so",]
+[[Application.Package.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "application"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "acls"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnaccesscontrol.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnaccesscontrolfactory.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnaccesscontrollists.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnboolflagstate.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_acls.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "connections.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "database"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "orm"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "basemodel.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dummy_cursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dummy_signal.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_basemodel.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_bytearray.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_query_orm.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_signals.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_thread_session.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "pnbuffer.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnconnection.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnconnectionmanager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pncursortablemodel.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pngroupbyquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnparameterquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnsignals.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnsqlcursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnsqldrivers.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnsqlquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnbuffer.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnconnection.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnconnection_manager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pncursortablemodel.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pngroupbyquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnparameterquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnsqlcursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnsqldrivers.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnsqlquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "file.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "load_script.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "metadata"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnaction.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pncompoundkeymetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnfieldmetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnrelationmetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pntablemetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pncompoundkeymetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnfieldmetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnrelationmetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pntablemetadata.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "module.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "moduleactions.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "packager"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnpackager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnunpacker.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnpackager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_pnunpaker.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "parsers"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "parser_kut"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "kparsertools.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "kut2fpdf.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_parser_kut.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content.Content]]
+name = "parser_mtd"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pnmtdparser.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pnormmodelsfactory.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_parser_mtd.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content.Content]]
+name = "parser_qsa"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "flex.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "flscriptparse.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "lextab.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "postparse.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pyconvert.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pytnyzer.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_parser_qsa.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "token_rules.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "parser_ui"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "qt3ui.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_parser_ui.py"
+included = false
+is_directory = false
+
+
+
+
+[[Application.Package.Content.Content]]
+name = "pnapplication.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "pncore.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "process.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "projectmodule.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "proxy.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qsadictmodules.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qsatypes"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "date.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sysbasetype.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_date.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_sysbasetype.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "safeqsa.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "staticloader"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnmodulesstaticloader.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_static_loader.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "ui"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "static_loader.ui"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_application.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_process.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_projectmodule.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_types.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_xmlaction.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "translator"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pntranslations.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pntranslator.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "types.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "utils"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "check_dependencies.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "convert_flaction.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "date_conversion.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "geometry.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "mobilemode.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "path.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sql_tools.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "xpm.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "xmlaction.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "core"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "decorators.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "exceptions.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fonts"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "noto_sans"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "garbage_collector.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "images"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "icono_pi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Pi-symbol.svg"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi.psd"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi2.xcf"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi2_1024.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi2_256.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi2_512.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi_1024.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi_256.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "Symbol_pi_512.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "icons"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "about.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "aboutqt.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "cancel.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "consola.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "date.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "delete.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "down.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "edit.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "edit_file.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "edit_file_xml.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "estilo.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "exit.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "flfielddb.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "fltable-clean.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "fltable-data.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "fltable-filter.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "fltable-odf.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "folder.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "folder_update.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "font.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-bottom.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-down.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-first.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-home.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-jump.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-last.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-next.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-previous.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-top.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "go-up.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-add.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-bold.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-cancel.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-clear.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-copy.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-cut.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-delete.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-find-and-replace.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-find.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-fullscreen.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-go-back-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-go-back-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-go-down.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-go-forward-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-go-forward-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-go-up.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-goto-bottom.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-goto-first-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-goto-first-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-goto-last-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-goto-last-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-goto-top.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-home.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-indent-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-indent-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-italic.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-jump-to-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-jump-to-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-justify-center.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-justify-fill.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-justify-left.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-justify-right.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-forward-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-forward-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-next-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-next-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-pause.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-play-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-previous-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-previous-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-record.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-rewind-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-rewind-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-media-stop.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-new.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-open.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-paste.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-print-preview.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-print.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-properties.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-redo-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-refresh.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-remove.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-save-as.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-save.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-select-all.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-stop.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-strikethrough.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-underline.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-undo-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-unindent-ltr.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "gtk-unindent-rtl.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "help_index.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "insert.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "lock.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "ok.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "paste.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-128.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-16.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-24.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-256.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-32.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-48.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-57.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-64.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo-72.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo-logo.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-128.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-16.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-24.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-256.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-32.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-48.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo-64.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pineboo2-logo.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "print.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "reload.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_ebcomportamiento.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flareas.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_fldumpdb.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flgroups.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flloadmod.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flloadmodpkg.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flmodules.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flmrproper.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flreinit.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flreloadbatch.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flreloadlast.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "sys_flusers.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "terminal.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "unlock.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "up.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "zoom.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "splashscreen"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dbadmin240.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dbadmin480.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "quick240.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "quick480.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "readme"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "splash.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "splash.svg"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "message_manager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "settings.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "system.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "translate.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "utils"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "check_dependencies.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "logging.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "singleton.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "struct.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_utils_base.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_version.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "utils_base.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "version.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content]]
+name = "fllegacy"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "aqsobjects"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqboolflagstate.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqformdb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqobjectquerylist.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqods.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqs.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsbuttongroup.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsettings.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqshttp.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsignalmapper.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsmtpclient.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsobjectfactory.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsql.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsqlcursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqsqlquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqssproject.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "aqutil.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_aqobjectquerylist.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_aqods.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_aqs.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_aqsbuttongroup.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_aqsql.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_aqutil.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "flaction.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flapplication.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flcheckbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flcodbar.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fldatatable.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fldateedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fldoublevalidator.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flfielddb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flformdb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flformrecorddb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flformsearchdb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flgroupbyquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flintvalidator.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fljasperengine.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fllineedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fllistviewitem.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flmanager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flmanagermodules.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flnetwork.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flparameterquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flpixmapview.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flposprinter.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flreportengine.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flreportviewer.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flscripteditor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flserialport.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flsettings.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flsmtpclient.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flspinbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flsqlconnections.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flsqlcursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flsqlquery.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fltable.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fltabledb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fltimeedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "fluintvalidator.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flutil.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flvar.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flwidget.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "flworkspace.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "systype.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flcodbar.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_fldatatable.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flfielddb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flform.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flformrecorddb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flformsearch.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flmanager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flreportengine.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_fltabledb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_flutil.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_settings.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_smtp.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_systype.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content]]
+name = "interfaces"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "cursoraccessmode.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "dgi_schema.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "iapicursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "iconnection.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "ifieldmetadata.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "imainwindow.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "imanager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "isqlcursor.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "itablemetadata.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "loader"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "connection.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "dgi.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "dlgconnect"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "conn_dialog.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "dlgconnect.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "dlgconnect.ui"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "init_project.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "main.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "options.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "preload.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "projectconfig.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_connection.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_main.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_projectconfig.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "plugins"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "custom_widgets"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flfielddb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltable.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltabledb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pncore.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "dgi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "dgi_fcgi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dgi_fcgi.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "dgi_qt"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dgi_objects"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "dlg_about"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "about_pineboo.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "about_pineboo.ui"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "progress_dialog_manager.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "splash_screen.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "status_help_msg.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "dgi_qt.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "dgi_schema.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "mainform"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "eneboo"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "eneboo.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mainform.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_eneboo.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content.Content]]
+name = "eneboo_mdi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "eneboo_mdi.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mainform.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "test_eneboo_mdi.py"
+included = false
+is_directory = false
+
+
+
+
+[[Application.Package.Content.Content]]
+name = "sql"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmssql.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmysql_innodb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmysql_myisam.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flqpsql.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flsqlite.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pnsqlschema.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content]]
+name = "py.typed"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "q3widgets"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "checkbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "combobox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "dateedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "dialog.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "filedialog.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "groupbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "line.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "lineedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "messagebox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "numberedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "picture.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "pixmap.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qaction.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qbuttongroup.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qbytearray.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qcheckbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qcombobox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qdataview.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qdateedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qdatetime.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qdialog.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qdir.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qeventloop.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qframe.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qgroupbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qhboxlayout.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qhbuttongroup.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qhttp.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qiconset.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qlabel.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qlayoutwidget.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qline.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qlineedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qlistview.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qlistviewwidget.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qmainwindow.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qmenu.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qmessagebox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qobject.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qpopupmenu.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qpushbutton.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qradiobutton.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qspinbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtable.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtabwidget.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtextedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtextstream.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtimeedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtoolbar.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qtoolbutton.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qvboxlayout.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qvbuttongroup.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qwidget.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "radiobutton.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "rect.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "size.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "spinbox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_dateedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_messagebox.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_qbytearray.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_qhttp.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_qpushbutton.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_spinbox.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "textedit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "timeedit.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "qsa"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "decorators.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "dictmodules.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "emptyscript.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "formdbwidget.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "input.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "pncontrolsfactory.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "qsa.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_class.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_classes.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_knownbugs.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_orm.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "test_utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "utils.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "system_module"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "forms"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "ebcomportamiento.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flareas.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flfiles.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flgroups.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmodulos.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flusers.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "FLWidgetMasterTable.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "master.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "master_copy.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "master_print.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "master_print_copy.ui"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.ui"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "models"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flacls_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flacos_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flacs_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flareas_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flfiles_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flgroups_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fllarge_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmetadata_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmodules_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flseqs_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flserial_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flsettings_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest2_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest3_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest4_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest5_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flupdates_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flusers_model.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flvar_model.py"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "queries"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest2.qry"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content]]
+name = "scripts"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "ebcomportamiento.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fldumpdb.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flfiles.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flloadmod.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flloadmodpkg.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmasterareas.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmodules.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flmrproper.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flreinit.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flreloadbatch.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "flreloadlast.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "fltest6.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "tests"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_flmodules.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "test_sys.py"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "sys.xml"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "sys.xpm"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "translations"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "__init__.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.ca.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.de.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.en.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.es.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.fr.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.gl.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.it.ts"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "sys.pt.ts"
+included = false
+is_directory = false
+
+
+
