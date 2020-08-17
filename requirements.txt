@@ -1,0 +1,2 @@
+pyqtdeploy>=3.0.0
+pineboolib>=0.73.19
