@@ -119,7 +119,7 @@ run(args)
 # Build the demo.
 build_dir = 'build-' + target
 
-shutil.copy('pyqt-pineboo.py', os.path.join('data', 'pyqt-pineboo.py.dat'))
+#shutil.copy('pyqt-pineboo.py', os.path.join('data', 'pyqt-pineboo.py.dat'))
 
 args = ['pyqtdeploy-build', '--target', target, '--build-dir', build_dir]
 

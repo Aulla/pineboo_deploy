@@ -104,6 +104,7 @@ install_from_source = false
 ssl = "securetransport"
 
 [Qt.linux]
+install_from_source = false
 ssl = "openssl-runtime"
 
 [Qt.macos]
