@@ -54,32 +54,32 @@ installed_modules = ["QtCore", "QtGui", "QtNetwork", "QtWidgets",
 
 # PyQt3D ######################################################################
 
-# [PyQt3D]
-# version = "5.15.0"
+#[PyQt3D]
+#version = "5.15.0"
 
 
 # PyQtChart ###################################################################
 
-# [PyQtChart]
-# version = "5.15.0"
+#[PyQtChart]
+#version = "5.15.0"
 
 
 # PyQtDataVisualization #######################################################
 
-# [PyQtDataVisualization]
-# version = "5.15.0"
+#[PyQtDataVisualization]
+#version = "5.15.0"
 
 
 # PyQtPurchasing ##############################################################
 
-# [PyQtPurchasing]
-# version = "5.15.0"
+#[PyQtPurchasing]
+#version = "5.15.0"
 
 
 # QScintilla ##################################################################
 
-# [QScintilla]
-# version = "2.11.5"
+#[QScintilla]
+#version = "2.11.5"
 
 
 # Qt ##########################################################################
@@ -134,3 +134,4 @@ version = "1.2.7"
 [zlib.win]
 install_from_source = true
 static_msvc_runtime = true
+
