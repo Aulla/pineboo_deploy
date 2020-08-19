@@ -9,11 +9,11 @@ is_console = false
 is_bundle = false
 name = "Pineboo"
 qmake_configuration = ""
-script = "data/pineboo.py"
+script = "pineboo.py"
 syspath = ""
 
 [Application.Package]
-name = "./data"
+name = "data"
 exclude = [ "*.pyd", "*.pyx", "*.pxi", "__pycache__", "*-info", "EGG_INFO", "*.so", "build*", "pyqt*", "README*", "sysroot*",]
 [[Application.Package.Content]]
 name = "pineboo.py"
