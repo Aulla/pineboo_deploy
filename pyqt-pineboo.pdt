@@ -9,12 +9,397 @@ is_console = false
 is_bundle = false
 name = "Pineboo"
 qmake_configuration = ""
-script = "pineboo.py"
-syspath = ""
+script = "data/pineboo.py"
+syspath = "./data"
 
 [Application.Package]
 name = "data"
 exclude = [ "*.pyd", "*.pyx", "*.pxi", "__pycache__", "*-info", "EGG_INFO", "*.so", "build*", "pyqt*", "README*", "sysroot*",]
+[[Application.Package.Content]]
+name = "cliente_json-rpc.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "COPYRIGHT"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "deploy_tools"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "android_template"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "AndroidManifest.xml"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "res"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "ic_launcher-web.png"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mipmap-hdpi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "ic_launcher.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mipmap-ldpi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "ic_launcher.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mipmap-mdpi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "ic_launcher.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mipmap-xhdpi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "ic_launcher.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mipmap-xxhdpi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "ic_launcher.png"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mipmap-xxxhdpi"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "ic_launcher.png"
+included = false
+is_directory = false
+
+
+
+
+
+[[Application.Package.Content]]
+name = "docker"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "pineboo-build"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "Dockerfile"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "pip-requirements.txt"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content]]
+name = "docker-compose.yml"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "docs"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "create_docs.sh"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "make.bat"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "Makefile"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "module_template.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "package_template.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content]]
+name = "source"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content]]
+name = "code"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "GITDIR"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content]]
+name = "conf.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "index.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content]]
+name = "linters"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "bandit"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "bandit.rst"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "index.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "mypy"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "index.rst"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pylint"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "application.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "core.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "fllegacy.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "interfaces.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "loader.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "plugins.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "pylint.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "qsa.rst"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "static"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "GITFOLDER"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content.Content.Content]]
+name = "pytest-coverage"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "index.rst"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content.Content]]
+name = "_static"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "linters"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "bandit"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "GITDIR"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "mypy"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "GITFOLDER"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "mypy-html-tpl.css"
+included = false
+is_directory = false
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "pytest-coverage"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content.Content.Content]]
+name = "GITFOLDER"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content.Content.Content.Content.Content]]
+name = "pytest-coverage-style-tpl.css"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content.Content]]
+name = "_templates"
+included = false
+is_directory = true
+[[Application.Package.Content.Content.Content.Content]]
+name = "GITFOLDER"
+included = false
+is_directory = false
+
+
+
+[[Application.Package.Content.Content]]
+name = "update_linters.sh"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "git-flparser"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "git_reset_mtime.sh"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "LICENSE.mit"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "lintproject"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "mypy.ini"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "pineboo"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "pineboo-core"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "pineboo-packager"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "pineboo-parse"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "pineboo-pyconvert"
+included = false
+is_directory = false
+
 [[Application.Package.Content]]
 name = "pineboo.py"
 included = false
@@ -26,11 +411,6 @@ included = true
 is_directory = true
 [[Application.Package.Content.Content]]
 name = "__init__.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content]]
-name = "__init__.pyc"
 included = true
 is_directory = false
 
@@ -687,27 +1067,12 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content.Content]]
-name = "flclasses.pyc"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content.Content]]
 name = "flex.py"
 included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content.Content]]
-name = "flex.pyc"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content.Content]]
 name = "flscriptparse.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content.Content]]
-name = "flscriptparse.pyc"
 included = true
 is_directory = false
 
@@ -866,12 +1231,6 @@ included = true
 is_directory = false
 
 
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "qsaparser"
-included = true
-is_directory = true
-Content = []
 
 
 [[Application.Package.Content.Content.Content]]
@@ -1141,11 +1500,6 @@ included = true
 is_directory = true
 [[Application.Package.Content.Content.Content]]
 name = "__init__.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content]]
-name = "__init__.pyc"
 included = true
 is_directory = false
 
@@ -2024,11 +2378,6 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "__init__.pyc"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "check_dependencies.py"
 included = true
 is_directory = false
@@ -2714,17 +3063,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "__init__.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flfielddb.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flfielddb.py.src"
 included = true
 is_directory = false
 
@@ -2734,27 +3073,12 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "fltable.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "fltabledb.py"
 included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "fltabledb.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "pncore.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "pncore.py.src"
 included = true
 is_directory = false
 
@@ -3554,17 +3878,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "__init__.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flacls_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flacls_model.py.src"
 included = true
 is_directory = false
 
@@ -3574,17 +3888,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flacos_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flacs_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flacs_model.py.src"
 included = true
 is_directory = false
 
@@ -3594,17 +3898,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flareas_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flfiles_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flfiles_model.py.src"
 included = true
 is_directory = false
 
@@ -3614,17 +3908,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flgroups_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "fllarge_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "fllarge_model.py.src"
 included = true
 is_directory = false
 
@@ -3634,17 +3918,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flmetadata_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flmodules_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flmodules_model.py.src"
 included = true
 is_directory = false
 
@@ -3654,17 +3928,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flseqs_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flserial_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flserial_model.py.src"
 included = true
 is_directory = false
 
@@ -3674,17 +3938,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flsettings_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "fltest2_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "fltest2_model.py.src"
 included = true
 is_directory = false
 
@@ -3694,17 +3948,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "fltest3_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "fltest4_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "fltest4_model.py.src"
 included = true
 is_directory = false
 
@@ -3714,17 +3958,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "fltest5_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "fltest_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "fltest_model.py.src"
 included = true
 is_directory = false
 
@@ -3734,17 +3968,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flupdates_model.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flusers_model.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flusers_model.py.src"
 included = true
 is_directory = false
 
@@ -3753,17 +3977,6 @@ name = "flvar_model.py"
 included = true
 is_directory = false
 
-[[Application.Package.Content.Content.Content.Content]]
-name = "flvar_model.py.src"
-included = true
-is_directory = false
-
-
-[[Application.Package.Content.Content.Content]]
-name = "packages"
-included = true
-is_directory = true
-Content = []
 
 [[Application.Package.Content.Content.Content]]
 name = "queries"
@@ -3790,17 +4003,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "__init__.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "ebcomportamiento.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "ebcomportamiento.py.src"
 included = true
 is_directory = false
 
@@ -3810,17 +4013,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "fldumpdb.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flfiles.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flfiles.py.src"
 included = true
 is_directory = false
 
@@ -3830,17 +4023,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flloadmod.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flloadmodpkg.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flloadmodpkg.py.src"
 included = true
 is_directory = false
 
@@ -3850,17 +4033,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flmasterareas.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flmodules.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flmodules.py.src"
 included = true
 is_directory = false
 
@@ -3870,17 +4043,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flmrproper.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flreinit.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flreinit.py.src"
 included = true
 is_directory = false
 
@@ -3890,17 +4053,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "flreloadbatch.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "flreloadlast.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "flreloadlast.py.src"
 included = true
 is_directory = false
 
@@ -3910,17 +4063,7 @@ included = true
 is_directory = false
 
 [[Application.Package.Content.Content.Content.Content]]
-name = "fltest6.py.src"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
 name = "sys.py"
-included = true
-is_directory = false
-
-[[Application.Package.Content.Content.Content.Content]]
-name = "sys.py.src"
 included = true
 is_directory = false
 
@@ -4026,4 +4169,64 @@ is_directory = false
 
 
 
+
+[[Application.Package.Content]]
+name = "pylama.ini"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "pylintrc"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "requirements.txt"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "requirements_api.txt"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "requirements_from_test.txt"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "setup.cfg"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "setup.py"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "tempdata"
+included = false
+is_directory = true
+[[Application.Package.Content.Content]]
+name = "GITEMPTYDIR"
+included = false
+is_directory = false
+
+
+[[Application.Package.Content]]
+name = "test.qs"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "test_import_safety.sh"
+included = false
+is_directory = false
+
+[[Application.Package.Content]]
+name = "tox.ini"
+included = false
+is_directory = false
 

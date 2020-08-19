@@ -118,13 +118,16 @@ run(args)
 
 # Build the demo.
 build_dir = 'build-' + target
-
 data_folder = os.path.join('data')
-if os.path.exists(data_folder):
-    shutil.rmtree(data_folder)
-        
-os.mkdir(data_folder)
-run(['git', 'clone', 'https://github.com/Aulla/pineboo.git', data_folder])
+if not no_clean:
+    if os.path.exists(data_folder):
+        shutil.rmtree(data_folder)
+
+
+if not os.path.exists(data_folder):   
+    os.mkdir(data_folder)
+    run(['git', 'clone', 'https://github.com/Aulla/pineboo.git', data_folder])
+    
 #shutil.copy('pyqt-pineboo.py', os.path.join('data', 'pyqt-pineboo.py.dat'))
 
 args = ['pyqtdeploy-build', '--target', target, '--build-dir', build_dir]
