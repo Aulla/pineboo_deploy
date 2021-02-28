@@ -15,7 +15,6 @@ install_from_source = false
 
 [Python]
 version = "3.7.8"
-dynamic_loading = true
 install_host_from_source = true
 
 [Python.win]
@@ -25,7 +24,7 @@ install_host_from_source = false
 # PyQt ########################################################################
 
 [PyQt]
-version = "5.15.0"
+version = "5.15.2"
 
 [PyQt.android]
 disabled_features = ["PyQt_Desktop_OpenGL", "PyQt_Printer"]
@@ -53,40 +52,8 @@ installed_modules = ["QtCore", "QtGui", "QtNetwork", "QtWidgets",
         "QtWinExtras"]
 
 
-# PyQt3D ######################################################################
-
-#[PyQt3D]
-#version = "5.15.0"
-
-
-# PyQtChart ###################################################################
-
-#[PyQtChart]
-#version = "5.15.0"
-
-
-# PyQtDataVisualization #######################################################
-
-#[PyQtDataVisualization]
-#version = "5.15.0"
-
-
-# PyQtPurchasing ##############################################################
-
-#[PyQtPurchasing]
-#version = "5.15.0"
-
-
-# QScintilla ##################################################################
-
-#[QScintilla]
-#version = "2.11.5"
-
-
-# Qt ##########################################################################
-
 [Qt]
-version = "5.15.0"
+version = "5.15.2"
 edition = "opensource"
 configure_options = ["-opengl", "desktop", "-no-dbus", "-qt-pcre"]
 skip = ["qtactiveqt", "qtconnectivity", "qtdoc", "qtgamepad", "qtlocation",
@@ -105,7 +72,6 @@ install_from_source = false
 ssl = "securetransport"
 
 [Qt.linux]
-install_from_source = false
 ssl = "openssl-runtime"
 
 [Qt.macos]
@@ -119,7 +85,7 @@ static_msvc_runtime = true
 # SIP #########################################################################
 
 [SIP]
-version = "4.19.24"
+version = "12.8.1"
 module_name = "PyQt5.sip"
 
 
@@ -136,7 +102,11 @@ version = "1.2.7"
 install_from_source = true
 static_msvc_runtime = true
 
-[pineboolib]
-install_from_source = false
-version = "0.73.20.2"
 
+[sqlite]
+version = "3340100"
+install_from_source = true
+
+[pineboo]
+version = "0.77.10"
+install_from_source = true

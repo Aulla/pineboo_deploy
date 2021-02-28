@@ -1,18 +1,18 @@
 version = 0
 sysroot = ""
 sysroots_dir = ""
-parts = [ "Python:sysconfig", "Python:gzip", "Python:logging", "Python:logging.config", "Python:logging.handlers", "Python:platform", "Python:__future__", "Python:optparse", "Python:xml.etree.ElementTree", "Python:sqlite3", "Python:sqlite3.dbapi2", "Python:xml.dom", "Python:encodings.iso8859_15", "Python:inspect", "Python:fnmatch", "Python:tempfile", "Python:urllib.request", "Python:html", "Python:html.entities", "Python:html.parser", "Python:csv", "Python:encodings.utf_16_be", "Python:uuid", "Python:xml.dom.minidom", "Python:xml.sax", "Python:xml.sax.handler", "Python:xml.sax.saxutils", "Python:xml.sax.xmlreader", "Python:email.mime", "Python:email.mime.application", "Python:email.mime.audio", "Python:email.mime.base", "Python:email.mime.image", "Python:email.mime.message", "Python:email.mime.multipart", "Python:email.mime.nonmultipart", "Python:email.mime.text", "Python:pkgutil", "Python:types", "Python:decimal", "Python:distutils.core", "Python:concurrent", "Python:concurrent.futures", "Python:glob", "Python:typing", "Python:pathlib", "Python:ctypes", "Python:ctypes.util", "Python:ctypes.wintypes", "PyQt:PyQt5.QtWidgets", "PyQt:PyQt5.QtNetwork", "PyQt:PyQt5.QtAndroidExtras", "PyQt:PyQt5.QtX11Extras", "PyQt:PyQt5.QtPrintSupport", "PyQt:PyQt5.QtXml", "PyQt:PyQt5.uic", "PyQt:PyQt5.Qt", "PyQt:PyQt5.QtSvg", "PyQt:PyQt5.QtSerialPort", "SIP:PyQt5.sip", "PyQt:PyQt5.QtGui",]
+parts = [ "Python:ssl", "Python:sysconfig", "Python:zlib", "Python:importlib.resources", "PyQt:PyQt5.QtWidgets", "PyQt:PyQt5.QtNetwork", "PyQt:PyQt5.QtAndroidExtras", "PyQt:PyQt5.QtX11Extras", "PyQt:PyQt5.QtWinExtras", "PyQt:PyQt5.QtMacExtras", "PyQt:PyQt5.uic", "SIP:PyQt5.sip", "PyQt:PyQt5.QtGui", "PyQt:PyQt5.QtCore", "PyQt:PyQt5", "pineboo:pineboo",]
 
 [Application]
-entry_point = "pineboolib.loader.main:startup"
+entry_point = ""
 is_console = false
 is_bundle = false
 name = "Pineboo"
 qmake_configuration = ""
-script = ""
+script = "/home/aulla/repos/github/pineboo/pineboo.py"
 syspath = ""
 
 [Application.Package]
 name = ""
-exclude = [ "*.pyd", "*.pyx", "*.pxi", "__pycache__", "*-info", "EGG_INFO", "*.so", "build*", "pyqt*", "README*", "sysroot*",]
+exclude = [ "*.pyc", "*.pyd", "*.pyo", "*.pyx", "*.pxi", "__pycache__", "*-info", "EGG_INFO", "*.so",]
 Content = []

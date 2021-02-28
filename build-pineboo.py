@@ -3,14 +3,14 @@
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
-# 
+#
 # 1. Redistributions of source code must retain the above copyright notice,
 #    this list of conditions and the following disclaimer.
-# 
+#
 # 2. Redistributions in binary form must reproduce the above copyright notice,
 #    this list of conditions and the following disclaimer in the documentation
 #    and/or other materials provided with the distribution.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 # AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -47,21 +47,18 @@ def run(args):
 # Parse the command line.
 parser = argparse.ArgumentParser()
 parser.add_argument('--qmake',
-        help="the qmake executable when using an existing Qt installation",
-        metavar="FILE")
+                    help="the qmake executable when using an existing Qt installation",
+                    metavar="FILE")
 parser.add_argument('--target', help="the target architecture", default='')
 parser.add_argument('--quiet', help="disable progress messages",
-        action='store_true')
+                    action='store_true')
 parser.add_argument('--verbose', help="enable verbose progress messages",
-        action='store_true')
-parser.add_argument('--no-clean', help="leave build directory",
-        action='store_true')
+                    action='store_true')
 cmd_line_args = parser.parse_args()
 qmake = os.path.abspath(cmd_line_args.qmake) if cmd_line_args.qmake else None
 target = cmd_line_args.target
 quiet = cmd_line_args.quiet
 verbose = cmd_line_args.verbose
-no_clean = cmd_line_args.no_clean
 
 # Pick a default target if none is specified.
 if not target:
@@ -91,10 +88,15 @@ if not target:
         print("Unsupported platform:", sys.platform, file=sys.stderr)
         sys.exit(2)
 
-# Make sure qmake was specified if it is needed.
-if target in ('android-32', 'android-64', 'ios-64') and not qmake:
-    print("--qmake must be specified for", target, file=sys.stderr)
-    sys.exit(2)
+# Make sure qmake was specified only if it is needed.
+if target in ('android-32', 'android-64', 'ios-64'):
+    if not qmake:
+        print("--qmake must be specified for", target, file=sys.stderr)
+        sys.exit(2)
+else:
+    if qmake:
+        print("--qmake must not be specified for", target, file=sys.stderr)
+        sys.exit(2)
 
 # Anchor everything from the directory containing this script.
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -118,17 +120,8 @@ run(args)
 
 # Build the demo.
 build_dir = 'build-' + target
-data_folder = os.path.join('data')
-#if not no_clean:
-#    if os.path.exists(data_folder):
-#        shutil.rmtree(data_folder)
 
-
-#if not os.path.exists(data_folder):   
-#    os.mkdir(data_folder)
-#    run(['git', 'clone', 'https://github.com/Aulla/pineboo.git', data_folder])
-    
-#shutil.copy('pyqt-pineboo.py', os.path.join('data', 'pyqt-pineboo.py.dat'))
+#shutil.copy('pyqt-demo.py', os.path.join('data', 'pyqt-demo.py.dat'))
 
 args = ['pyqtdeploy-build', '--target', target, '--build-dir', build_dir]
 
@@ -141,9 +134,6 @@ if quiet:
 
 if verbose:
     args.append('--verbose')
-
-if no_clean:
-    args.append('--no-clean')
 
 args.append('pyqt-pineboo.pdt')
 
@@ -172,21 +162,21 @@ else:
     run([make])
 
     if target.startswith('android'):
-        if os.path.isfile('android-pyqt-pineboo-deployment-settings.json'):
+        if os.path.isfile('android-pyqt-demo-deployment-settings.json'):
             # Qt v5.14 or later.
             run([make, 'apk'])
-            apk = 'pyqt-pineboo.apk'
+            apk = 'pyqt-demo.apk'
             apk_dir = os.path.join(build_dir, 'android-build')
         else:
             # Qt v5.13 or earlier.
-            run([make, 'INSTALL_ROOT=pyqt-pineboo', 'install'])
+            run([make, 'INSTALL_ROOT=pyqt-demo', 'install'])
             run([os.path.join(os.path.dirname(qmake_path), 'androiddeployqt'),
-                    '--gradle', '--input',
-                    'android-libpyqt-pineboo.so-deployment-settings.json',
-                    '--output', 'pyqt-pineboo'])
-            apk = 'pyqt-pineboo-debug.apk'
+                 '--gradle', '--input',
+                 'android-libpyqt-demo.so-deployment-settings.json',
+                 '--output', 'pyqt-demo'])
+            apk = 'pyqt-demo-debug.apk'
             apk_dir = os.path.join(build_dir, 'pyqt-pineboo', 'build', 'outputs',
-                    'apk', 'debug')
+                                   'apk', 'debug')
 
 # Tell the user where the demo is.
 if target.startswith('android'):
@@ -199,7 +189,9 @@ Run Xcode to build the app and run it in the simulator or deploy it to a
 device.""".format(build_dir))
 
 elif target.startswith('win') or sys.platform == 'win32':
-    print("The pyqt-demo executable can be found in the '{0}' directory.".format(os.path.join(build_dir, 'release')))
+    print("The pyqt-demo executable can be found in the '{0}' directory.".format(
+        os.path.join(build_dir, 'release')))
 
 else:
-    print("The pyqt-demo executable can be found in the '{0}' directory.".format(build_dir))
+    print(
+        "The pyqt-demo executable can be found in the '{0}' directory.".format(build_dir))
