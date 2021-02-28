@@ -29,8 +29,7 @@ class pinebooComponent(Component):
         else:
 
             self.unpack_archive(self.get_archive())
-            self.copy_dir('pineboolib', os.path.join(
-                self.target_include_dir, 'pineboolib'))
+            self.copy_dir('.', os.path.join(self.target_include_dir))
 
     @property
     def provides(self):
